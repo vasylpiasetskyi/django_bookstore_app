@@ -28,3 +28,17 @@
 
 ### Collect static
 ```docker-compose exec web python manage.py collectstatic```
+
+
+### For deploy at heroku
+login to heroku: ```heroku login```
+create heroku.yml: ```touch heroku.yml```
+create heroku app: ```heroku create```
+setup container: ```heroku stack:set container -a app_name_here```
+setup db: ```heroku addons:create heroku-postgresql:hobby-dev -a app_name_here```
+set git remote heroku: ```heroku git:remote -a app_name_here```
+push code to heroku: ```git push heroku main``` or ```git push heroku master```
+to migrate db: ```heroku run python manage.py migrate```
+to create superuser: ```heroku run python manage.py createsuperuser```
+
+TO OPEN APP: ```heroku open -a app_name_here```
