@@ -53,3 +53,8 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# For Prod
+docker-compose-prod.yml
+__pycache__/ db.sqlite3
+.DS_Store # Mac only
