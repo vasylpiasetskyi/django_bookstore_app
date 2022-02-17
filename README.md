@@ -42,3 +42,5 @@ to migrate db: ```heroku run python manage.py migrate```
 to create superuser: ```heroku run python manage.py createsuperuser```
 
 TO OPEN APP: ```heroku open -a app_name_here```
+
+to view heroku logs: ```heroku logs --tail```
