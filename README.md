@@ -22,5 +22,9 @@
 ```docker-compose exec web python manage.py makemigrations ```
 ```docker-compose exec web python manage.py migrate```
 
+
 ### Generate secret key
 ```docker-compose exec web python -c 'import secrets; print(secrets.token_urlsafe(38))'```
+
+### Collect static
+```docker-compose exec web python manage.py collectstatic```
